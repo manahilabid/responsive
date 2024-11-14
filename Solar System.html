@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/Solar System.css">
+    <!-- Bootstrap -->
+     <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Images/Sky Gazing Logo png.png" alt="Logo" width="40" height="50" class="d-inline-block align-text-top">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav mx-auto">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Planets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Sun</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Moon</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Asteroids and Comets</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Solar Phenomena</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  More
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#">Stars</a></li>
+                  <li><a class="dropdown-item" href="#">Comets</a></li>
+                  <li><a class="dropdown-item" href="#">Asteroids</a></li>
+                </ul>
+              </li>
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+      <!-- header -->
+
+<!-- Hero Section with Carousel -->
+<div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+      <!-- Slide 1 -->
+      <div class="carousel-item active">
+          <div class="hero slide1">
+              <div class="background slide1"></div>
+              <div class="hero-content">
+                  <h1>Explore the Solar System</h1>
+                  <p>Discover the wonders of the cosmos with us!</p>
+                  <button class="btn">Learn More</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+          <div class="hero slide2">
+              <div class="background slide2"></div>
+              <div class="hero-content">
+                  <h1>Journey Through the Stars</h1>
+                  <p>Experience the beauty of distant worlds!</p>
+                  <button class="btn">Start Now</button>
+              </div>
+          </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+          <div class="hero slide3">
+              <div class="background slide3"></div>
+              <div class="hero-content">
+                  <h1>Unlock Cosmic Secrets</h1>
+                  <p>Learn about planets, moons, and more!</p>
+                  <button class="btn">Explore More</button>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <!-- Carousel Controls -->
+  <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+  </button>
+</div>
+
+
+        <!-- Home Start -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="Images/home 1.jpg" class="d-block w-100 slideimg">
+            <div class="overlay">
+                <div class="carousel-caption  d-md-block">
+                    <h5 class="slide_heading">Welcome to Sky Gazing</h5>
+                    <p class="slide_text">Discover the universe with us. Explore fascinating celestial objects and deep-sky phenomena. Join our community of sky enthusiasts and uncover the mysteries of the cosmos.</p>
+                    <div class="info">
+                        <span class="date">03/07/2024<span id="currentDate1"></span></span>
+                        <span class="visitor-count">1234 VIEWS</span>
+                        <span class="likes-count">567 LIKES</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Explore the Universe</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Images/Slide 2 replace.jpg" class="d-block w-100 slideimg">
+            <div class="overlay">
+                <div class="carousel-caption  d-md-block">
+                    <h5 class="slide_heading">Explore the Planets</h5>
+                    <p class="slide_text">Learn about different planets in our solar system. Discover their unique features and mysteries. Dive into the vast expanse of space and uncover the secrets of each planet's history and composition.</p>
+                    <div class="info">
+                        <span class="date">03/07/2024<span id="currentDate2"></span></span>
+                        <span class="visitor-count">5678 VIEWS</span>
+                        <span class="likes-count">890 LIKES</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Dive Deeper</a>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <img src="Images/Slide 3 replace.jpg" class="d-block w-100 slideimg">
+            <div class="overlay">
+                <div class="carousel-caption  d-md-block">
+                    <h5 class="slide_heading">Star Gazing</h5>
+                    <p class="slide_text">Experience the awe-inspiring night sky like never before with the guidance of our expert astronomers and resources. Discover the beauty of stars, constellations, and more as you delve deeper into the fascinating mysteries of the universe.</p>
+                    <div class="info">
+                        <span class="date">03/07/2024<span id="currentDate3"></span></span>
+                        <span class="visitor-count">91011 VIEWS</span>
+                        <span class="likes-count">1234 LIKES</span>
+                    </div>
+                    <a href="#" class="btn btn-primary btn-lg">Discover More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
+</div>
+<!-- Home End -->
+
+
+      <!-- Hero Section -->
+
+<!-- Solar System Categories Start -->
+<div class="solar_heading">
+  <h1>Solar System Categories</h1>
+</div>
+<main class="my_container-fluid solar_background-colour"> 
+  <section class="category-card">
+      <div class="solar_image-container">
+          <img class="solar_img" src="Images/Solar Eclipse.jpg" alt="Solar Eclipse">
+      </div>
+      <div class="solar_text-container">
+          <h2 class="solar_h2">Solar Eclipse</h2>
+          <p>Learn about solar eclipses, including types and how they occur.</p>
+          <a href="Solar Eclipse.html"><button class="solar_button">Read More</button></a>
+      </div>
+  </section>
+  <section class="category-card">
+      <div class="solar_text-container">
+          <h2 class="big_bang_h2">Big Bang Theory</h2>
+          <p>Discover the origins of the universe with the Big Bang Theory.</p>
+          <a href="Big Bang Theory.html"><button class="big_bang_button">Read More</button></a>
+      </div>
+      <div class="solar_image-container">
+          <img class="big_bang_img" src="Images/Big Bang Theory.jpg" alt="Big Bang Theory">
+      </div>
+  </section>
+  <section class="category-card">
+      <div class="solar_image-container">
+          <img class="evolution_img" src="Images/Evolution of Earth.png" alt="Evolution of Earth">
+      </div>
+      <div class="solar_text-container">
+          <h2 class="evolution_h2">Evolution of Earth</h2>
+          <p>Explore the evolution of Earth over billions of years.</p>
+          <a href="Evolution of Earth.html"><button class="evolution_button">Read More</button></a>
+      </div>
+  </section>
+</main>
+
+<!-- Solar System Categories End -->
+<!-- Star Gaing Start -->
+
+<div class="solar_heading">
+  <h1>Star Gazing</h1>
+</div>
+<main class="container">
+  <section class="star-gazing">
+      <div class="star-gazing-item">
+          <h2>When to Star Gaze</h2>
+          <img src="Images/Star Gaze 1 (1).jpg" alt="When to Star Gaze">
+          <p>Discover the best times to observe the stars and celestial events.</p>
+          <a href="When to Star Gaze.html"><button>Read More</button></a>
+      </div>
+      <div class="star-gazing-item">
+          <h2>Where to Star Gaze</h2>
+          <img src="Images/Star Gaze 2.jpg" alt="Where to Star Gaze">
+          <p>Find the ideal locations for star gazing around the world.</p>
+          <a href="Where to Star Gaze.html"><button>Read More</button></a>
+      </div>
+      <div class="star-gazing-item">
+          <h2>What to Expect</h2>
+          <img src="Images/Star Gaze 3.jpg" alt="What to Expect">
+          <p>Learn about the celestial objects you can see during star gazing.</p>
+          <a href="What to Expect.html"><button>Read More</button></a>
+      </div>
+  </section>
+</main>
+
+<!-- Star Gazing End -->
+
+    <!-- Bootstrap JS and js  -->
+  <script src="Js/skygazing.js"></script>
+  <script src="Js/javascript and jquery.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.min.js"></script>
+
+</body>
+</html>
